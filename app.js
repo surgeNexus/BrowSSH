@@ -40,6 +40,6 @@ app.use(function (req, res, next) {
 app.use('/', indexRoutes);
 app.use('/connection', connectionRoutes);
 
-app.listen(3010, function () {
+app.listen(3333, function () {
   console.log('BrowSSH is running');
 });
