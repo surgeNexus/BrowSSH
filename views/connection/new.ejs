@@ -1,0 +1,33 @@
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New Connection</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form action="/connection/new" method="POST">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Connection Name</label>
+                <input type="text" class="form-control" name="name">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Remote IP Address</label>
+                <input type="text" class="form-control" name="ip">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Remote Port</label>
+                <input type="text" class="form-control" name="port">
+              </div>
+              <button type="submit" class="btn btn-primary">Save Connection</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            </form>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
